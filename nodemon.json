@@ -1,0 +1,9 @@
+{
+  "watch": ["server"],
+  "ext": "ts",
+  "exec": "ts-node --project tsconfig.server.json server",
+  "events": {
+    "restart": "kill-port 3000"
+  },
+  "delay": "1500"
+}
